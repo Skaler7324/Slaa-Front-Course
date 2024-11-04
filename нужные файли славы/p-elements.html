@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque eos recusandae obcaecati voluptas dignissimos hic nobis tempore odit a sint quae laboriosam incidunt saepe porro natus iusto amet sapiente animi enim, magnam maxime blanditiis, esse in? Consequatur eius voluptates similique, repudiandae, eos dolore deleniti quo qui ipsam commodi ex nemo, corrupti et consectetur nobis. Deleniti soluta voluptatibus inventore, non facilis nisi officiis sint repellat numquam, explicabo temporibus vel aperiam. Voluptatibus deleniti quae consequatur ratione, expedita a sed tempora et vero architecto dicta necessitatibus earum odit. Deleniti labore esse cum consequuntur animi sapiente voluptas eos similique. Sapiente earum quidem voluptates iste!</P>
+
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+</body>
+
+    <Style>
+        * {
+            transition: 1s;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+        }
+
+        p::first-line {
+            background-color: black;
+            color: chartreuse;
+        }
+
+        ul li::before {
+            content: '😎👌';
+            display: inline-block;
+            /* width: 10px; */
+            /* height: 10px; */
+            /* border-radius: 50px; */
+            /* background-color: red; */
+            position: relative;
+            left: -10px;
+            /* bottom: 2px; */
+            /* box-shadow: 0 0 10px 5px black; */
+        }
+        ul li::after {
+            content: '😎👌';
+            display: inline-block;
+            /* width: 10px; */
+            /* height: 10px; */
+            /* border-radius: 50px; */
+            /* background-color: red; */
+            position: relative;
+            left: 0px;
+            /* bottom: 2px; */
+            /* box-shadow: 0 0 10px 5px black; */
+        }
+    </Style>
+
+</html>

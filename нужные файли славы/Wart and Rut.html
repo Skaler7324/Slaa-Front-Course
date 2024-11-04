@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">CSS Variables</div>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet totam labore dicta dolore beatae eligendi iusto quam aliquid distinctio. Neque, voluptatibus tenetur, exercitationem cum velit quibusdam cumque impedit at minima ab nemo eos aliquam nihil id consequatur sequi? Voluptates suscipit unde autem ipsum, voluptas quibusdam velit cumque facilis, corrupti expedita deleniti quis explicabo quia ea placeat delectus dolores at maiores quaerat, temporibus non. Tempore excepturi, iure cumque numquam aperiam corrupti voluptatum qui! Velit saepe consequuntur quis maxime eligendi magni illum, accusamus suscipit sit modi est recusandae nemo sequi vitae sint incidunt sed cupiditate repudiandae cum atque a natus eaque!
+            </p>
+        </div>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fuga tempora, at repellat dignissimos porro distinctio amet in nulla. At soluta cupiditate totam. Architecto laboriosam iusto reiciendis. Quisquam veniam earum commodi, rerum minima laborum eos totam et nemo atque natus magni inventore ipsam deserunt modi eum neque, assumenda eveniet. Rerum laudantium quibusdam adipisci perspiciatis at odit voluptates similique impedit totam in blanditiis soluta nihil exercitationem quisquam possimus doloribus vitae unde vero aliquid voluptas eius, aspernatur minima dolor laboriosam? Quasi doloremque debitis dolores ipsam tempora fugit. Impedit doloremque error exercitationem quos, totam perferendis in tempore cum, corrupti omnis, sint natus praesentium.
+    </p>
+    
+</body>
+
+<style>
+
+
+    /* *{
+        padding: 30px;
+    } */
+    :root {
+        --radius: 20px;
+        --width: 100%;
+        /* --white: #ff0020; */
+        --white: #f2f2f2;
+        --red: #ff0020;
+        /* --red: #f2f2f2; */
+        --black: black;
+        --regular-size: 16px;
+        --padding: 20px;
+    }
+
+    html {
+        font-size: var(--regular-size);
+    }
+
+    body {
+        min-width: 100%;
+        min-height: 100vh;
+        /* margin: 0; */
+        background-color: var(--black);
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--white);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        --white: #0066f5;
+        --green: green;
+        --width: 600px;
+        /* width: 100%; */
+        max-width: var(--width);
+        /* width: 50%; */
+        margin: 20px auto;
+        padding: var(--padding);
+        border: 2px solid var(--green);
+        border-radius: var(--radius, 10px);
+    }
+
+
+
+    .title {
+        font-size: 2.5rem;
+        color: var(--red);
+    }
+
+    .text {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: var(--green);
+    }
+
+    .btn {
+        --white: 40px;
+
+        display: inline-block;
+        vertical-align: top;
+        padding: var(--green);
+
+        background-color: transparent;
+        border: 2px solid var(--red);
+        border-radius: var(--radius, 8px);
+        font-size: var(--green);
+        color: var(--green);
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: var(--red);
+    }
+
+    @media (max-width: 400px) {
+
+        :root {
+            --regular-size: 14px;
+            --padding: 1.5rem;
+        }
+    }
+
+
+</style>
+
+</html>
